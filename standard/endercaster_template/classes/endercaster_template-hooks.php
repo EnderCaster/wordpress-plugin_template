@@ -1,10 +1,12 @@
 <?php
+
 /**
  * @package endercaster_template
  * @subpackage classes
  */
 
 namespace EnderCaster\endercaster_template;
+
 class Hooks
 {
     public function run()

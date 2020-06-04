@@ -1,10 +1,12 @@
 <?php
+
 /**
  * @package endercaster_template
  * @subpackage classes
  */
 
 namespace EnderCaster\endercaster_template;
+
 class Pages
 {
     public function run()
@@ -15,9 +17,9 @@ class Pages
     //pages to show
     public function example_page()
     {
-        ?>
+?>
         <h1>Hello World</h1>
-        <?php
+<?php
     }
 
     //add pages to menu
@@ -28,5 +30,4 @@ class Pages
         add_submenu_page('endercaster_template-example', 'But', 'But', 'manage_options', 'endercaster_template-example', [$this, "example_page"]);
         add_submenu_page('endercaster_template-example', 'Same', 'Same', 'manage_options', 'endercaster_template-example', [$this, "example_page"]);
     }
-
 }
